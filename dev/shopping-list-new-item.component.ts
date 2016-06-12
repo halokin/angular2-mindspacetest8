@@ -31,7 +31,7 @@ myForm: ControlGroup;
 
 constructor(private _shoppingListService: ShoppingListService, private _formBuilder: FormBuilder) {}
 
-onClick() {
+onSubmit() {
 	this._shoppingListService.insertItem({name: this.item.name, amount: this.item.amount});
 }
 
